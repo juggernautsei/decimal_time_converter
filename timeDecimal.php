@@ -46,11 +46,9 @@ $totalHoursConverted = floor($minutes[0] / 60) . ':';
  *  This if statement was added to handle the correction of a leading zero to get the math right for the
  *  minutes.
  */
-if ($minutes[1] <= "14"){
-    $totalMinutesConverted =  round("0.0".$minutes[1] * 60, 2);
-}else{
-    $totalMinutesConverted =  round("0.".$minutes[1] * 60, 2);
-}
+
+ $totalMinutesConverted =  round("0.".$minutes[1] * 60, 2);
+
 
 /**
  *  Now need to remove the decimal
