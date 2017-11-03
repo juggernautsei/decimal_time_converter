@@ -15,7 +15,7 @@
 function time_to_decimal($time) {
    $timeArr = explode(':', $time);
 
-   $decTime = ($timeArr[0] * 60) + round($timeArr[1]/60, 2) ;
+   $decTime = $timeArr[0] + round($timeArr[1]/60, 2) ;
 
     return $decTime;
 }
@@ -24,8 +24,8 @@ function time_to_decimal($time) {
  *  Here is a sample array of time. In your project you will have to build a similar array of time in
  *  some kind of loop.
  */
-//$timeArray = array("540", "0.45","0.98","0.33","0.02");
-$timeArray = array("540", "0.12","0.07","0.05","0.08");
+//$timeArray = array("1.5", "0.45","0.98","0.33","0.02");
+$timeArray = array("1.5", "0.12","0.07","0.05","0.08");
 
 /**
  *  here the array is summed into a larger decimal number that includes a float
